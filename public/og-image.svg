@@ -1,0 +1,19 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0b0b"/>
+      <stop offset="100%" stop-color="#1f1f1f"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e11d2e"/>
+      <stop offset="100%" stop-color="#ff5c72"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+  <circle cx="980" cy="130" r="140" fill="url(#g2)" opacity="0.35"/>
+  <circle cx="180" cy="540" r="200" fill="url(#g2)" opacity="0.25"/>
+  <rect x="140" y="160" width="120" height="120" rx="24" fill="#e11d2e"/>
+  <rect x="170" y="190" width="60" height="60" rx="16" fill="#ffffff"/>
+  <text x="300" y="230" fill="#ffffff" font-family="Space Grotesk, sans-serif" font-size="48" font-weight="700">BelongDigitalSolutions</text>
+  <text x="300" y="290" fill="#d4d4d4" font-family="Sora, sans-serif" font-size="28">Premium Digital Marketing Agency</text>
+</svg>

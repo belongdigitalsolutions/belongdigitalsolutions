@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --primary: #ffffff;
+  --secondary: #1f1f1f;
+  --accent: #0d6efd;
+  --ink: #0b0b0b;
+  --fog: #f5f5f5;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--primary);
+  color: var(--secondary);
+  font-family: "Sora", system-ui, sans-serif;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.section-padding {
+  @apply px-6 md:px-10 lg:px-20 py-16 md:py-20;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.hero-grid {
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(0, 0, 0, 0.06), transparent 45%),
+    radial-gradient(circle at 85% 10%, rgba(0, 0, 0, 0.04), transparent 40%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.92), rgba(245, 245, 245, 0.8));
+}
+
+.sheen {
+  position: relative;
+  overflow: hidden;
+}
+
+.sheen::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.3) 50%, transparent 100%);
+  transform: translateX(-120%);
+  transition: transform 0.6s ease;
+}
+
+.sheen:hover::after {
+  transform: translateX(120%);
+}
+
+.text-gradient {
+  background: linear-gradient(120deg, #0d6efd, #4f8dff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.nav-shadow {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+.parallax-mask {
+  mask-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4));
+}
+
+input, textarea, select {
+  outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(31, 31, 31, 0.45);
+}
+
+.form-field {
+  @apply w-full rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm transition focus:border-red-400 focus:ring-2 focus:ring-red-200;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full border border-accent bg-white px-6 py-3 text-sm font-semibold text-accent shadow-glow transition hover:-translate-y-1 hover:bg-neutral-100 hover:shadow-xl;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-full border border-neutral-200 px-6 py-3 text-sm font-semibold text-secondary transition hover:border-accent hover:text-accent;
+}
+
+.badge {
+  @apply inline-flex items-center gap-2 rounded-full bg-black px-4 py-1 text-xs uppercase tracking-widest text-white;
+}
+
+.ticker {
+  background: #ffffff;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.ticker-track {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  width: max-content;
+  animation: ticker-scroll 24s linear infinite;
+}
+
+.ticker-item {
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--secondary);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
