@@ -11,7 +11,7 @@ const ServiceDetail = () => {
 
   if (!service) {
     return (
-      <div className="section-padding mx-auto max-w-6xl">
+      <div className="section-padding bg-white">
         <h1 className="font-display text-3xl font-semibold">Service not found</h1>
         <Link to="/services" className="btn-secondary mt-4 inline-flex">
           Back to Services
@@ -28,15 +28,15 @@ const ServiceDetail = () => {
         <link rel="canonical" href={buildCanonical(`/services/${service.slug}`)} />
       </Helmet>
 
-      <section className="section-padding bg-secondary text-white">
+      <section className="section-padding bg-white">
         <div className="mx-auto max-w-6xl">
           <span className="badge">Service</span>
           <h1 className="mt-4 font-display text-4xl font-semibold">{service.title}</h1>
-          <p className="mt-3 text-neutral-300">{service.hero}</p>
+          <p className="mt-3 text-neutral-600">{service.hero}</p>
         </div>
       </section>
 
-      <section className="section-padding mx-auto max-w-6xl">
+      <section className="section-padding bg-white">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -68,7 +68,7 @@ const ServiceDetail = () => {
           </div>
         </div>
 
-        <div className="mt-10 rounded-3xl border border-neutral-100 bg-fog p-6">
+        <div className="mt-10 rounded-3xl border border-neutral-100 bg-white p-6">
           <h3 className="font-display text-xl font-semibold">How we make your company a reputed brand</h3>
           <ol className="mt-4 space-y-3 text-sm text-neutral-600">
             {serviceSteps.map((step, index) => (
@@ -79,10 +79,10 @@ const ServiceDetail = () => {
           </ol>
         </div>
 
-        <div className="mt-10 flex flex-wrap items-center justify-between gap-4 rounded-3xl bg-secondary p-6 text-white">
+        <div className="mt-10 flex flex-wrap items-center justify-between gap-4 rounded-3xl border border-neutral-100 bg-white p-6 shadow-soft">
           <div>
             <h4 className="font-display text-2xl font-semibold">Ready to start this service?</h4>
-            <p className="mt-2 text-sm text-neutral-300">Book a strategy session and we’ll craft your roadmap.</p>
+            <p className="mt-2 text-sm text-neutral-600">Book a strategy session and we’ll craft your roadmap.</p>
           </div>
           <Link to="/contact" className="btn-primary">
             Start Project

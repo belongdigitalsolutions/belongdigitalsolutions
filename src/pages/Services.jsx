@@ -13,7 +13,7 @@ const Services = () => (
       <link rel="canonical" href={buildCanonical("/services")} />
     </Helmet>
 
-    <section className="section-padding mx-auto max-w-6xl">
+    <section className="section-padding bg-white">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

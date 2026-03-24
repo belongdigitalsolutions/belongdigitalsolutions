@@ -29,7 +29,7 @@ const Home = () => {
 
       <Hero />
 
-      <section className="section-padding mx-auto max-w-6xl">
+      <section className="section-padding bg-white">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -50,7 +50,10 @@ const Home = () => {
               Learn More
             </Link>
           </div>
-          <div className="rounded-3xl border border-neutral-100 bg-white p-6 shadow-soft">
+          <div className="relative overflow-hidden rounded-3xl border border-neutral-100 bg-white p-6 shadow-soft">
+            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(0,0,0,0.06),transparent_45%),radial-gradient(circle_at_85%_15%,rgba(0,0,0,0.04),transparent_40%)]" />
+            <div className="pointer-events-none absolute -bottom-12 -left-10 h-32 w-32 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.9),rgba(0,0,0,0.06))] blur-2xl" />
+            <div className="relative">
             <p className="text-sm font-semibold uppercase tracking-widest text-neutral-400">Why Us</p>
             <ul className="mt-4 space-y-3 text-sm text-neutral-600">
               <li>• Growth plans tailored to your industry and stage.</li>
@@ -58,11 +61,12 @@ const Home = () => {
               <li>• Transparent reporting with actionable next steps.</li>
               <li>• Dedicated success managers and rapid iteration.</li>
             </ul>
+            </div>
           </div>
         </motion.div>
       </section>
 
-      <section className="section-padding bg-fog">
+      <section className="section-padding bg-white">
         <div className="mx-auto max-w-6xl">
           <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
             <div>
@@ -84,7 +88,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="section-padding mx-auto max-w-6xl">
+      <section className="section-padding bg-white">
         <div className="grid gap-8 lg:grid-cols-3">
           {[
             {
@@ -119,10 +123,10 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="section-padding bg-secondary text-white">
+      <section className="section-padding bg-white">
         <div className="mx-auto max-w-6xl text-center">
           <h2 className="font-display text-3xl font-semibold">Ready to build your next growth chapter?</h2>
-          <p className="mt-3 text-neutral-300">
+          <p className="mt-3 text-neutral-600">
             Work with a team that treats your brand like their own. Let's craft a growth roadmap built for
             scale.
           </p>
@@ -132,7 +136,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="section-padding mx-auto max-w-6xl">
+      <section className="section-padding bg-white">
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
           <div>
             <span className="badge">Latest Blogs</span>
@@ -149,7 +153,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="section-padding bg-fog">
+      <section className="section-padding bg-white">
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1.2fr_1fr]">
           <div>
             <span className="badge">Contact</span>

@@ -10,10 +10,8 @@ const PrivacyPolicy = () => (
       <link rel="canonical" href={buildCanonical("/privacy-policy")} />
     </Helmet>
 
-    <section className="section-padding mx-auto max-w-4xl">
+    <section className="section-padding bg-white">
       <h1 className="font-display text-4xl font-semibold">Privacy Policy</h1>
-      <p className="mt-4 text-sm text-neutral-600">Effective Date: March 23, 2026</p>
-
       <div className="mt-8 space-y-6 text-sm text-neutral-600">
         <p>
           BelongDigitalSolutions respects your privacy and is committed to protecting the personal

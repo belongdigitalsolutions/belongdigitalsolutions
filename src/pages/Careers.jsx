@@ -12,7 +12,7 @@ const Careers = () => (
       <link rel="canonical" href={buildCanonical("/careers")} />
     </Helmet>
 
-    <section className="section-padding mx-auto max-w-6xl">
+    <section className="section-padding bg-white">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -49,9 +49,9 @@ const Careers = () => (
       </div>
 
       <div className="mt-10 grid gap-8 lg:grid-cols-[1.2fr_1fr]">
-        <div className="rounded-3xl bg-secondary p-8 text-white">
+        <div className="rounded-3xl border border-neutral-100 bg-white p-8 shadow-soft">
           <h3 className="font-display text-3xl font-semibold">Apply to Join Us</h3>
-          <p className="mt-3 text-neutral-300">
+          <p className="mt-3 text-neutral-600">
             Tell us about yourself and share your experience. We’re excited to learn about you.
           </p>
         </div>

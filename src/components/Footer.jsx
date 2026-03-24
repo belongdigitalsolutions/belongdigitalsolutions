@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.svg";
+import { FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import logo from "../assets/logo.png";
 
 const Footer = () => (
   <footer className="bg-[#141414] text-white">
@@ -16,6 +18,41 @@ const Footer = () => (
         <p className="mt-4 text-sm text-neutral-200">
           Premium digital marketing, performance creative, and growth strategy for ambitious brands.
         </p>
+        <div className="mt-5 flex items-center gap-3">
+          {[
+            {
+              icon: FaYoutube,
+              label: "YouTube",
+              href: "https://www.youtube.com/channel/UCCJcjqoRvW-G3O4hyoUsNpg"
+            },
+            {
+              icon: FaInstagram,
+              label: "Instagram",
+              href: "https://www.instagram.com/belongdigitalsolutions/"
+            },
+            { icon: FaXTwitter, label: "X", href: "https://x.com/BelongDigitalS" },
+            {
+              icon: FaLinkedin,
+              label: "LinkedIn",
+              href: "https://www.linkedin.com/in/belong-digital-solutions-6199273b9/"
+            }
+          ].map((item) => {
+            const Icon = item.icon;
+            return (
+              <a
+                key={item.label}
+                href={item.href}
+                target="_blank"
+                rel="noreferrer"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-white transition hover:border-white/40 hover:text-white"
+                aria-label={item.label}
+                title={item.label}
+              >
+                <Icon className="text-lg" />
+              </a>
+            );
+          })}
+        </div>
       </div>
 
       <div>

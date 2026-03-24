@@ -17,7 +17,7 @@ const About = () => (
       <link rel="canonical" href={buildCanonical("/about")} />
     </Helmet>
 
-    <section className="section-padding mx-auto max-w-6xl">
+    <section className="section-padding bg-white">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -34,7 +34,7 @@ const About = () => (
       </motion.div>
     </section>
 
-    <section className="section-padding bg-fog">
+    <section className="section-padding bg-white">
       <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-3">
         {[
           {
@@ -65,7 +65,7 @@ const About = () => (
       </div>
     </section>
 
-    <section className="section-padding mx-auto max-w-6xl">
+    <section className="section-padding bg-white">
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
         {stats.map((stat) => (
           <div key={stat.label} className="rounded-3xl border border-neutral-100 bg-white p-6 shadow-sm">
@@ -95,7 +95,7 @@ const About = () => (
       </div>
     </section>
 
-    <section className="section-padding mx-auto max-w-6xl">
+    <section className="section-padding bg-white">
       <div className="rounded-3xl border border-neutral-100 bg-white p-8 shadow-soft">
         <h2 className="font-display text-3xl font-semibold">Why choose us</h2>
         <div className="mt-6 grid gap-4 md:grid-cols-2">
@@ -105,7 +105,7 @@ const About = () => (
             "Transparent reporting and growth insights",
             "Agile execution with weekly optimization"
           ].map((item) => (
-            <div key={item} className="rounded-2xl border border-neutral-100 bg-fog p-4 text-sm text-neutral-600">
+            <div key={item} className="rounded-2xl border border-neutral-100 bg-white p-4 text-sm text-neutral-600">
               {item}
             </div>
           ))}

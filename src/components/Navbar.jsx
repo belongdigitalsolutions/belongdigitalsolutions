@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import Modal from "./Modal";
 import QuoteForm from "./forms/QuoteForm";
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo.png";
 
 const links = [
   { label: "Home", to: "/", end: true },

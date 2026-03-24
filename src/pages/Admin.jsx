@@ -61,12 +61,12 @@ const Admin = () => {
   };
 
   if (loading) {
-    return <div className="section-padding">Loading...</div>;
+    return <div className="section-padding bg-white">Loading...</div>;
   }
 
   if (!user) {
     return (
-      <div className="section-padding mx-auto max-w-md">
+      <div className="section-padding bg-white">
         <Helmet>
           <title>Admin Login | BelongDigitalSolutions</title>
           <link rel="canonical" href={buildCanonical("/admin")} />
@@ -100,7 +100,7 @@ const Admin = () => {
   }
 
   return (
-    <div className="section-padding mx-auto max-w-6xl">
+    <div className="section-padding bg-white">
       <Helmet>
         <title>Admin Dashboard | BelongDigitalSolutions</title>
         <link rel="canonical" href={buildCanonical("/admin")} />

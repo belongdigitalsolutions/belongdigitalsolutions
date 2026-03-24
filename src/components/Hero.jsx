@@ -5,7 +5,7 @@ import Modal from "./Modal";
 import QuoteForm from "./forms/QuoteForm";
 import heroImage from "../assets/hero-illustration.svg";
 import heroBg from "../assets/hero-bg-img.jpg";
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo.png";
 
 const Hero = () => {
   const [open, setOpen] = useState(false);
